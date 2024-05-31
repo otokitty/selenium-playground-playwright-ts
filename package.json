@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test --ui"
+    "test": "playwright test --project=chromium --headed --workers=1"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
     "@faker-js/faker": "^8.4.1",
     "@playwright/test": "^1.44.1",
     "@types/node": "^20.12.13"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
